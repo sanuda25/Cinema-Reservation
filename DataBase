@@ -1,6 +1,6 @@
 create database cReservation;
 use cReservation;
-create table customer(CusID int(5), CusName varchar(20), Email varchar(20), Tele int(10), primary key(CusID));
+create table customer(CusID int(5), CusName varchar(20), Email varchar(20), Tele int(10), password varchar(20), primary key(CusID));
 create table bookedFilm(bookedID int(5), bookedDate date, bookedTime varchar(10), primary key(bookedID), filmID int(5));
 create table relation1( CusID int(5), bookedID int(5));
 create table film(filmID int(5), filmName varchar(20), duration int(5), primary key(filmID));
